@@ -1,0 +1,305 @@
+@import url('https://fonts.googleapis.com/css?family=Abel');
+@import url('https://fonts.googleapis.com/css?family=Abhaya Libre');
+
+*{
+    margin: 0;
+}
+
+body{
+  margin: 0;
+  padding: 0;
+  font-family: Abhaya Libre,serif;
+}
+
+#banner {
+    position: relative;
+    background-image: url("Images/sitecoiso.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position:top center;
+    height: 51.6vw;
+    width: 100%;
+    margin: 0;
+  }
+  
+  /* Navbar links */
+  .navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(192, 201, 193);
+    color: #084b1c;
+}
+
+.brand-title{
+    font-size: 2rem;
+    font-weight: bold;
+    margin: .5rem;
+    list-style: none;
+    text-decoration: none;
+    color: #084b1c;
+}
+
+.navbar-links ul{
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navbar-links li{
+    list-style: none;
+}
+
+.navbar-links li a{
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #084b1c;
+    padding: 1rem;
+    display: block;
+}
+
+.navbar-links li:hover{
+    background-color: rgb(197, 197, 197);
+}
+
+.toggle-button{
+    position: absolute;
+    top: .75rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+}
+
+.toggle-button .bar{
+    height: 3px;
+    width: 100%;
+    background-color: #084b1c;
+    border-radius: 10px;
+}
+
+  
+
+.gallery {
+    margin: 20vh;
+    padding: 1.5vh;
+    border: 1px solid rgb(255, 255, 255);
+    width: 30vh;
+    background-color: rgb(226, 236, 227);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+  
+  .gallery:hover {
+    border: 1px solid #777;
+  }
+  
+  .gallery img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .desc {
+    padding: 2.5vw;
+    text-align: center;
+  }
+  
+  .content{
+    background-color: rgb(192, 201, 193);
+    height:100vh;
+    display: flex;
+    margin: 0;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+#area{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+}
+
+.image1{
+    width: auto;
+    height: 46vw;
+    margin:0;
+}
+
+.image2{
+  display: none;
+  height: auto;
+  width: 100vw;
+
+}
+
+.about{
+  margin: 0 3em; 
+  text-align: justify;
+  font-size: 1.5em;
+  color:#084b1c;
+}
+
+.skills{
+    height: 100%;
+    display:flex;
+    justify-content: space-around;
+    background-color: rgb(192, 201, 193);
+}
+
+.design{
+    color:#084b1c;
+}
+
+.web{
+    color:#084b1c;
+}
+
+.skill{
+    border: 2px solid #084b1c; 
+    margin: 4.5em;
+    padding: 3em;
+    
+}
+
+.skill h1{
+    padding: 8vh 0;
+    font-size: 4.2vw;
+
+}
+
+.skill li{
+    font-size:2.1vw;
+}
+
+.skill ul{
+    list-style-type: none;
+    padding: 2vh;
+}
+
+.valeu{
+  color: #084b1c;
+  font-weight: bold;
+  padding: 20vh; 
+  text-align: center;
+  font-size: 10vh;
+}
+
+.apresentacao{
+  height: 82vh;
+  display:flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: white;
+  color: #084b1c;
+}
+
+.campoDeApresentacao{
+  padding: 15vh;
+}
+
+.campoDeApresentacao img{
+  width: 40vh;
+  border-radius: 50%;
+  font-size: 15vh;
+  font-weight: bolder;
+}
+
+@media screen and (max-width:600px) {
+  .image1{
+    display:none; 
+  }
+
+  .image2{
+    display:block;
+  }
+  
+  .content{
+    flex-wrap: wrap; 
+    height: auto;
+  }
+
+  #area{
+    flex-wrap: wrap;
+  }  
+
+  .skills {
+    flex-wrap: wrap;  
+  }
+
+  .toggle-button{
+    display: flex;
+}
+
+.navbar-links{
+    display: none; 
+    width: 100%;
+}
+
+.navbar{
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.navbar-links ul{
+    width: 100%;
+    flex-direction: column;
+}
+
+.navbar-link li{
+    text-align: center;
+}
+
+.navbar-links li a{
+    padding: .5rem 1rem;
+}
+
+.navbar-links.active{
+    display: flex;
+}
+
+.apresentacao{
+    flex-wrap: wrap;
+    height: auto;
+}
+}
+
+.contato{
+  height: 22vh;
+  font-family: Abhaya Libre,serif;
+  color: #084b1c;
+  text-align: center;
+  font-size: 1.5vw;
+  padding: 30vh 10vw;
+}
+
+.main-footer{
+    background-color: rgb(192, 201, 193);
+    margin: 0;
+    color:white;
+    padding:.5em 0;
+  }
+  
+  .main-footer-container{
+    display: flex;
+  }
+  
+  .main-footer-container ul{
+    flex-grow: 1;
+    text-align: end;
+  }
+  
+  .footer-nav li{
+    padding: 0.5em;
+  }
+  
+  .footer-nav img{
+    width:30px; 
+    height: 30px;
+  }
+  .nav li{
+    display: inline;
+  }
+  
