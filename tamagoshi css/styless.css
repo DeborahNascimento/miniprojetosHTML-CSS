@@ -1,9 +1,75 @@
 *{
-    background-color: palevioletred;
+    box-sizing: border-box;
 }
+
+:root {
+    --pink: #FAD1D9;
+    --blue: #C5F6FF;
+    --stroke: #522438; 
+    --green: #C2E688;
+    --red: #FC6963;
+    --light-brow: #846662;
+    --gray: #9EA1AF;
+   }
+
+html, body{
+    background: var(--pink);
+    min-height: 100vh; margin: 0;   
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0; 
+}
+
 .ovo{
-    width: 80px;
-    height: 160px;
-    background: #097ba8;
-    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
 }
+
+.corpoDoOvo{
+    width: 340px;
+    height: 420px;
+    background: var(--blue);
+    border-radius: 50%;
+    border: 6px solid var(--stroke);
+    box-shadow: inset 10px 0 rgba(255,255,255,0.7), inset -10px 0 rgba(0,0,0,0.2) ;
+    position: relative;
+}
+
+.ovoDentroDoOvo{
+    background: var(--pink);
+    width:238px;
+    height:294px;
+    border-radius: 50%;
+    border: 6px solid var(--stroke);
+    margin: 40px auto;
+    overflow: hidden;
+    position: relative;
+}
+
+.visor{
+    background: var(--green);
+    width: 160px;
+    height: 160px;
+    border-radius: 10px;
+    border: 6px solid var(--stroke);
+    margin: 50px auto;
+    box-shadow: inset 6px 6px rgba(0,0,0,0.2);
+    overflow: hidden;
+    position: relative;
+
+}
+
+.vidroDoVisor:after, .vidroDoVisor:before{
+    content: "";
+    height: 200%;
+    width: 30px;
+    background-color: rgba(255,255,255,0.4);
+    position: absolute;
+    transform: rotate(45deg);
+    top: -80px;
+
+}
+
+.vidroDoVisor:after {right: 50px; width: 30px !important;}
