@@ -1,0 +1,9 @@
+*{
+    background-color: palevioletred;
+}
+.ovo{
+    width: 80px;
+    height: 160px;
+    background: #097ba8;
+    border-radius: 50%;
+}
