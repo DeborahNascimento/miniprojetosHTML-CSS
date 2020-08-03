@@ -7,3 +7,5 @@ nessa pasta se encontra mini projetos front-end, principalmente html e css para 
 
 2. Calculadora em html, css e javascript baseada no tutorial do [web dev simplified!](https://www.youtube.com/watch?v=j59qQ7YWLxw)
 
+3. um tamagotchi feito apenas com html e css. 
+
