@@ -7,6 +7,7 @@
     --blue: #C5F6FF;
     --stroke: #522438; 
     --green: #C2E688;
+    --yellow: rgb(228, 230, 136);
     --red: #FC6963;
     --light-brow: #846662;
     --gray: #9EA1AF;
@@ -43,6 +44,7 @@ html, body{
     height:294px;
     border-radius: 50%;
     border: 6px solid var(--stroke);
+    box-shadow: inset 10px 0 rgba(255,255,255,0.7), inset -10px 0 rgba(0,0,0,0.2);
     margin: 40px auto;
     overflow: hidden;
     position: relative;
@@ -73,3 +75,35 @@ html, body{
 }
 
 .vidroDoVisor:after {right: 50px; width: 30px !important;}
+
+.botao{
+    content: " ";
+    width: 50px; 
+    height: 50px;
+    background:  var(--yellow);
+    border: 6px solid var(--stroke);
+    box-shadow: inset 4px 0 rgba(255,255,255,0.7), inset -4px 0 rgba(0,0,0,0.2) ;;
+    border-radius: 50%;
+    z-index: 15;
+    position: absolute;
+}
+
+#btn1{
+    top: 260px;
+    left: 55px;
+}
+
+#btn2{
+    top: 300px;
+    left: 110px;
+}
+
+#btn3{
+    top: 300px;
+    left: 180px;
+}
+
+#btn4{
+    top: 260px;
+    left: 225px;
+}
