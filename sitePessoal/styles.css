@@ -27,7 +27,7 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: rgb(192, 201, 193);
+    background-color: rgb(255, 255, 255);
     color: #084b1c;
 }
 
@@ -87,8 +87,9 @@ body{
     margin: 20vh;
     padding: 1.5vh;
     border: 1px solid rgb(255, 255, 255);
-    width: 30vh;
-    background-color: rgb(226, 236, 227);
+    width: 50vh;
+    height: 40vh;
+    background-color: rgb(255, 255, 255);
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   }
   
