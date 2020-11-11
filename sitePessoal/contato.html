@@ -25,12 +25,18 @@
         </div>
     </div>
 </header>
+<body>
     <div class="contato">
-        <h1>Contato</h1>
-        <p>Para dúvidas, sugestões e contato enviar email para<br>
-        <p>deborahmdn@gmail.com</p>
+        <h2> Formulário de contato</h2>  
+        <form class="form" method="POST" action="email.php"><br>
+            <input class="field" name="name" placeholder="Nome"><br>
+            <input class="field" name="email" placeholder="E-mail"><br>
+            <textarea class="field message" name="message" placeholder="Digite sua mensagem aqui">
+            </textarea><br>
+            <input class="field" type="submit" value="enviar">
+        </form>  
     </div>
-
+</body>
 <footer class="main-footer">
     <div class="container main-footer-container">
         <ul class="nav footer-nav">
