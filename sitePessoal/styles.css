@@ -87,7 +87,7 @@ body{
     margin: 20vh;
     padding: 1.5vh;
     border: 1px solid rgb(255, 255, 255);
-    width: 50vh;
+    width: 40vh;
     height: 40vh;
     background-color: rgb(255, 255, 255);
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -265,6 +265,12 @@ body{
     flex-wrap: wrap;
     height: auto;
 }
+
+.gallery{
+  width: 30vh;
+}
+
+
 }
 
 .contato{
